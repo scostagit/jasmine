@@ -1,0 +1,24 @@
+{
+  "name": "jasmine",
+  "version": "1.0.0",
+  "description": "project to test tdd",
+  "main": "index.js",
+  "scripts": {   
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scostagit/jasmine.git"
+  },
+  "author": "sergio costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scostagit/jasmine/issues"
+  },
+  "homepage": "https://github.com/scostagit/jasmine#readme",
+  "devDependencies": {
+    "jasmin": "0.0.2"
+  }
+}
+
+
