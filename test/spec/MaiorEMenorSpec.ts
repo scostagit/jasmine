@@ -1,5 +1,5 @@
 
-//var MaiorEMenor  = require('./src/MaiorEMenor');
+import { MaiorEMenor} from "../../src/MaiorEMenor";
 
 /*
     describe
@@ -16,8 +16,8 @@
         uma função chamada it. Nela passaremos o "nome do teste", ou seja, o quê aquele teste faz, e em seguida uma função com o teste.
      */
     it("deve entender numeros em ordem nao sequencial",function(){
-       /* var algoritmo = new MaiorEMenor();
-        algoritmo.encontra([5,15,7,9]);*/
+        var algoritmo = new MaiorEMenor();
+        algoritmo.encontra([5,15,7,9]);
 
         /*
             expect
@@ -27,16 +27,16 @@
                 quais são as nossas expectativas com o resultado final. Sabemos que o valor maior é 15, e o menor é 5. Então colocaremos 
                 isso no teste:
          */
-        /*expect(algoritmo.pegaMaior()).toEqual(15);
-        expect(algoritmo.pegaMenor()).toEqual(5);*/
+        expect(algoritmo.pegaMaior()).toEqual(15);
+        expect(algoritmo.pegaMenor()).toEqual(5);
     });
 
     it("deve entender numeros em ordem decrescente", ()=> {
-       /* var algoritmo = new MaiorEMenor();
+       var algoritmo = new MaiorEMenor();
         algoritmo.encontra([9,8,7,6]);
 
         expect(algoritmo.pegaMaior()).toEqual(9);
-        expect(algoritmo.pegaMenor()).toEqual(6);*/
+        expect(algoritmo.pegaMenor()).toEqual(6);
     });
 
     it("test servrer", () =>{
