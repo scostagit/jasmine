@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "project to test tdd",
   "main": "index.js",
-  "scripts": {   
-    "test": "jasmine"
+  "scripts": {
+    "test": "jasmine",
+    "start": "tsc -w ",
+    "typings": "typings"
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,13 @@
     "url": "https://github.com/scostagit/jasmine/issues"
   },
   "homepage": "https://github.com/scostagit/jasmine#readme",
-  "devDependencies": {
-    "jasmin": "0.0.2"
+  "devDependencies": {  
+    "typescript": "^2.8.3",
+    "jasmine": "^2.4.1",
+    "typings": "1.0.4"
+  },
+  "dependencies": {   
+    "concurrently": "^2.0.0",
+    "node-rest-client": "^1.8.0"
   }
 }
-
-

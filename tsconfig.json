@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+         "target": "es5",
+         "removeComments": true,   //remove all comments 
+         "experimentalDecorators": true // Enable decorators
+       // "sourceMap": true
+        // "noImplicitAny": true,
+        // "module": "system"
+       // "target": "es5",
+      //  "allowJs": true    
+    }
+    // ,"files": [
+    //     "./vitro-app/typings/Vitro.d.ts"           
+    //     // "helpers/extensionsMethods.ts"
+    // ]
+}
