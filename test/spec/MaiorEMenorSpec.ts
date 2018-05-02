@@ -8,7 +8,7 @@
         parâmetro. Acostume-se com isso, no Jasmine (bem como no Javascript), passaremos funções para todos os lados:
  */
 
- describe("Maior e  Menor", function(){
+ describe("Maior e  Menor", ()=>{
     /*
      it
         Dentro dessa função, agora colocaremos cada um dos nossos testes. No primeiro deles, faremos exatamente o primeiro 
@@ -31,7 +31,7 @@
         expect(algoritmo.pegaMenor()).toEqual(5);*/
     });
 
-    it("deve entender numeros em ordem decrescente", function() {
+    it("deve entender numeros em ordem decrescente", ()=> {
        /* var algoritmo = new MaiorEMenor();
         algoritmo.encontra([9,8,7,6]);
 
@@ -39,7 +39,7 @@
         expect(algoritmo.pegaMenor()).toEqual(6);*/
     });
 
-    it("test servrer", function() {
+    it("test servrer", () =>{
        
     });
 

@@ -20,29 +20,29 @@ A única parte que não está automatizada é a validação, afinal um ser human
 É justamente isso que vamos melhorar. E, para facilitar nossa vida, usaremos um framework que nos dirá, 
 de maneira mais elegante, qual "console.log" falhou, e onde ele está.
  */
-function MaiorEMenor() {
+export class MaiorEMenor {
 
-    var menor;
-    var maior;
+     menor:number;
+     maior:number; 
 
-    var clazz = {
+        encontra (nums:number[]) {
 
-        encontra : function(nums) {
-
-            menor = Number.MAX_VALUE;
-            maior = Number.MIN_VALUE;
+            this.menor = Number.MAX_VALUE;
+            this.maior = Number.MIN_VALUE;
 
             nums.forEach(function(num) {
-                if(num < menor) menor = num;
-                if(num > maior) maior = num;
+                if(num < this.menor) this.menor = num;
+                if(num > this.maior) this.maior = num;
             });
-        },
+        }
 
-        pegaMenor : function() { return menor; },
-        pegaMaior : function() { return maior; }
-    };
-
-    return clazz;
+        pegaMenor():number { 
+            return this.menor; 
+        }
+        pegaMaior():number {
+             return this.maior; 
+        }
+   
 }
 
 /*var algoritmo = new MaiorEMenor();
